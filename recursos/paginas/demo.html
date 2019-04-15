@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/nav.css">
+        <link rel="stylesheet" type="text/css" href="../css/demo.css">
+        <link rel="shortcut icon" href="../imagenes/title_logo.png" />
+        <script src="../javascript/swapmode.js"></script>    
+        <title>Arduino - Demo</title>        
+    </head>
+    <body>
+        <div class='slider'>
+                <div class='slide1'></div>
+                <div class='slide2'></div>
+                <div class='slide3'></div>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="../../index.html">Inicio</a>
+            <a href="software.html">Software</a>
+            <a href="hardware.html">Hardware</a>
+            <a href="tiendas.html">Tiendas</a>
+            <a href="">Demo</a>
+            <a href="javascript:void(0);" class="icon" onclick="swapMode()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>       
+
+
+        <div id="demointro">
+            <h2>Aquí puedes ver la conectividad de un proyecto simple que enciende y apaga un LED con un boton.</h2>
+            <h2>haz click en los distintos elementos para ver una breve descripción.</h2>
+        </div>
+
+        <img id="demomapa" src="../imagenes/demo.png" alt="demoimg" width="878" height="573" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="demoinfo" alt="boton" title="boton" href="demo_boton.html" coords="146,161,177,192" shape="rect">
+            <area target="demoinfo" alt="placa" title="placa" href="demo_placa.html" coords="285,286,285,333,253,334,254,393,286,394,287,501,278,501,277,549,287,550,288,565,638,565,637,555,651,541,650,365,637,353,635,291,628,285" shape="poly">
+            <area target="demoinfo" alt="resist" title="resist" href="demo_resist.html" coords="136,214,148,271" shape="rect">
+            <area target="demoinfo" alt="resist" title="resist" href="demo_resist.html" coords="271,215,283,271" shape="rect">
+            <area target="demoinfo" alt="led" title="led" href="demo_led.html" coords="278,164,283,120,292,163,294,114,288,106,299,96,297,85,295,68,289,64,283,62,277,61,272,65,269,71,269,78,269,95" shape="poly">
+            <area target="demoinfo" alt="breadboard" title="breadboard" href="demo_breadboard.html" coords="335,216,509,281,877,280,877,1,2,0,0,38,1,142,1,277,105,277,128,120,226,36,333,37" shape="poly">
+        </map>
+
+
+        
+        <div id="infocontainer">
+            <iframe name="demoinfo" src="demo_default.html" frameborder="0"></iframe>
+        </div>
+
+    </body>    
+</html>

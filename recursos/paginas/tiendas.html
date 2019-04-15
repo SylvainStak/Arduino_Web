@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/nav.css">
+        <link rel="stylesheet" type="text/css" href="../css/tiendas.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css">
+        <link rel="shortcut icon" href="../imagenes/title_logo.png" />
+   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+        <script src="../javascript/swapmode.js"></script>    
+        <title>Arduino - Tiendas</title>        
+    </head>
+    <body>
+        <div class='slider'>
+                <div class='slide1'></div>
+                <div class='slide2'></div>
+                <div class='slide3'></div>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="../../index.html">Inicio</a>
+            <a href="software.html">Software</a>
+            <a href="hardware.html">Hardware</a>
+            <a href="">Tiendas</a>
+            <a href="demo.html">Demo</a>
+            <a href="javascript:void(0);" class="icon" onclick="swapMode()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>       
+        
+        
+
+        <div id="intromsg">
+            <h1>Aquí podras ver la localización de las tiendas donde poder comprar accesorios para arduino las cuales nosotros hemos verificado</h1>
+        </div>
+
+
+
+
+        <div id="mapid">
+            
+        </div>        
+
+        <div id="formintro">
+            <h1>Si quieres que tu tienda aparezca aquí, por favor rellene y envie el siguiente formulario:</h1>
+        </div>
+
+        <form action="../../index.html">
+            <table>
+                <tr class="center">
+                    <td colspan="3">Datos del dueño</td>
+                </tr>
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+
+                    <td>
+                        <input type="text">
+                    </td>                    
+                </tr>
+
+                <tr>
+                    <td>
+                        Apellidos:
+                    </td>
+
+                    <td>
+                        <input type="text">
+                    </td>                    
+                </tr>
+
+                <tr>
+                    <td>
+                        E-mail:
+                    </td>
+
+                    <td>
+                        <input type="text">
+                    </td>               
+                    
+                    <td>
+                        <select>
+                            <option value="gmail">@gmail.com</option>
+                            <option value="yahoo">@yahoo.com</option>
+                            <option value="hotmail">@hotmail.com</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Teléfono (Opcional):
+                    </td>
+
+                    <td>
+                        <input type="text">
+                    </td>                    
+                </tr>
+
+                <tr class="center">
+                    <td colspan="3">Datos de la tienda</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+
+                    <td>
+                        <input type="text">
+                    </td>                    
+                </tr>
+
+                <tr class="center">
+                    <td>
+                        Que vende?
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox">Electrónica</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox">Informática</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox">Arduino Hardware</td>
+                </tr>
+
+                <tr id=otros>
+                    <td><input type="checkbox">Otros</td>
+                </tr>
+
+                <tr>
+                    <td><input id="radio1" type="radio" name="tienda"><strong>Lat/Long</strong></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Lat:
+                    </td>
+
+                    <td>
+                        <input id="l1" type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Long:
+                    </td>
+
+                    <td>
+                        <input id="l2" type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input id="radio2" type="radio" name="tienda" checked><strong>Dirección</strong></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Dirección:
+                    </td>
+
+                    <td>
+                        <input id="d1" type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><input type="submit" value="Enviar" onclick="alert('tu petición ha sido enviada')"></td>
+                </tr>
+            </table>
+        </form>
+
+        <script src="../javascript/radioboton.js"></script>
+        <script src="../javascript/mapa.js"></script>
+    </body>    
+</html>

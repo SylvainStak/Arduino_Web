@@ -1,0 +1,66 @@
+@font-face{
+    font-family: SansationLight;
+    src: url("../fuentes/SansationLight/SansationLight.woff");
+}
+
+img{
+    border-bottom: 1px solid black;    
+}
+
+div{
+    width: 260px;
+    height: 170px;
+}
+
+div img{
+    width: 260px;
+    height: 165px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.products{
+    margin: 10px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 210px;
+    transition: 1s;
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);
+    -webkit-box-shadow: 2px 2px 10px black;
+    -moz-box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black;
+
+}
+
+#matrix_8:hover{
+    height: 270px;
+}
+
+#matrix_16:hover{
+    height: 270px;
+}
+
+#oled_display:hover{
+    height: 300px;
+}
+
+#touchscreen:hover{
+    height: 300px;
+}
+
+a{
+    font-size: 25px;
+    font-family: SansationLight;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+    font-family: SansationLight;
+    text-align: justify;
+    padding: 10px;
+}

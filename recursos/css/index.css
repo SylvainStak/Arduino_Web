@@ -1,0 +1,120 @@
+body{
+    background-image: url("../imagenes/big_wallpaper2.jpg");
+}
+
+#bienvenida h1{
+    position: relative;
+    font-family: LCDU;
+    text-transform: uppercase;    
+    text-shadow: 0 0 6px black, 0 0 5px red;
+    font-weight: bolder;
+    color: red;
+    animation: sign 8s infinite;
+    -webkit-animation: "sign" 6s linear infinite;
+}
+
+#bienvenida{
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid gray;
+    margin: 30px auto;
+    background-color: rgba(0,0,0,0.95);
+    overflow: hidden;
+    -webkit-box-shadow: 1px 1px 3px 4px #ccc;
+}
+
+#intro{
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+    font-family: SansationLight;
+    border-radius: 15px;
+    letter-spacing: 0.54px;
+    padding: 30px;
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);
+    overflow: auto;
+}
+
+#intro p{
+    margin-left: 15px;
+    text-align: justify;
+    right: 0px;    
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1000px){
+    #intro img{
+        display: none;
+    }
+}
+
+@-webkit-keyframes sign
+{
+    0%{left: 100%;}
+    100%{left: -60%;}    
+}
+
+#proyectos{
+    margin-top: 10%;
+    text-align: center;
+    color: #00ff19;
+    -webkit-text-stroke: 2px black;
+    -moz-text-stroke: 2px black;
+    font-size: 30px;
+    font-family: LCDU;
+    text-shadow: 0 0 6px #00ff19, 0 0 5px red;
+}
+
+.projects{
+    width: 400px;
+    height: 365px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);
+    margin: 10px;
+    float: left;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 10px black;
+    -moz-box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black;
+}
+
+.projects a{
+    font-size: 25px;
+    font-family: SansationLight;
+    margin-left: 5px;
+    text-decoration: none;    
+}
+
+.projects img{
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+footer{
+    position: relative;
+    clear: both;
+    bottom: 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 10px black;
+    -moz-box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black;
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);
+    margin-bottom: 45px;
+    bottom: -30px;
+    font-size: 10px;
+}
+
+footer h1{
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 1400px){
+    #todos{
+        margin: 0 auto;
+        width: 90%;
+    }
+}

@@ -1,0 +1,168 @@
+@font-face{
+    font-family: SansationLight;
+    src: url("../fuentes/SansationLight/SansationLight.woff");
+}
+
+@font-face{
+    font-family: TheBlackList;
+    src: url("../fuentes/TheBlackList/TheBlacklist.woff");
+}
+
+@font-face{
+    font-family: LCDU;
+    src: url("../fuentes/LCDU/LCDU.woff");
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0,255,255,0.15);
+}
+
+.topnav {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-box-shadow: 2px 2px 10px black;
+    -moz-box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: lightgray;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    text-shadow: 2.5px 2.5px gray;
+    font-family: LCDU;
+    font-size: 50px;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    -webkit-text-stroke: 1px black;
+    -moz-text-stroke: 1px black;
+}
+
+.topnav a:last-child{
+    border: none;
+}
+
+.topnav a:nth-child(5){
+    border-right-width: 2px;
+}
+  
+.topnav a:hover:not(:last-child) {
+    color: rgba(255, 26, 26, 1);
+    background-color: rgba(233, 220, 220, 0.1);
+}
+
+.topnav a:hover:last-child{
+    color: rgba(255, 26, 26, 1);
+    -webkit-text-stroke: 1px black;
+    -moz-text-stroke: 1px black;
+}
+
+  
+.topnav .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 1000px) {
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .topnav a:first-child{
+        border-right-width: 2px;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0; 
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+
+      border: 1px solid black;
+      border-left: none;
+      border-right: none;
+    }
+
+    .topnav.responsive a:last-child{
+        border:none;
+    }
+}
+
+.slider {
+    height: 200px;
+    position: relative;
+    border: 1px solid black;
+  }
+  .slide1,.slide2,.slide3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .slide1 {
+    background: url("../imagenes/slider1.jpg")no-repeat center;
+        background-size: cover;
+      animation:fade 8s infinite;
+  -webkit-animation:fade 8s infinite;
+  
+  } 
+  .slide2 {
+    background: url("../imagenes/slider2.jpg")no-repeat center;
+        background-size: cover;
+      animation:fade2 8s infinite;
+  -webkit-animation:fade2 8s infinite;
+  }
+  .slide3 {
+      background: url("../imagenes/slider3.jfif")no-repeat center;
+        background-size: cover;
+      animation:fade3 8s infinite;
+  -webkit-animation:fade3 8s infinite;
+  }
+  @-webkit-keyframes fade
+  {
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+  }
+
+  @-webkit-keyframes fade2
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+  }
+  
+  @-webkit-keyframes fade3
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+  }

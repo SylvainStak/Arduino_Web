@@ -1,0 +1,165 @@
+body{
+    background-image: url("../imagenes/big_wallpaper2.jpg")
+}
+
+.items{
+    float: left;
+    width: 40%;
+    height: 150px;
+    border: 1px solid black;
+    clear: both;
+    margin: 10px 0px;
+    min-width: 200px;
+}
+
+#arduino_web_editor{
+    margin-top: 60px;
+}
+
+.items:nth-child(2n){
+    float: right;
+}
+
+@media screen and (max-width: 1200px){
+    .items{
+        width: 99%;
+        margin: 10 auto;
+        float: none;
+    }
+
+    .items:nth-child(2n){
+        float: none;
+    }
+}
+
+
+.items{
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    overflow: hidden;
+}
+
+.items:nth-child(2n){
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.items .imag{    
+    float: right;
+}
+
+.items:nth-child(2n) .imag{
+    float: left;
+}
+
+#arduino_web_editor .item_text{
+    width: 60%;
+}
+
+#arduino_web_editor .imag{
+    position: relative;    
+    width: 140px;
+    height: 80%;
+    background-image: url("../imagenes/arduinocommunitylogo.png");
+    background-size: 140px 120px;
+    margin-top: 2px;
+    margin-right: 2px;
+    border-radius: 20px;
+}
+
+#arduino_ide .imag{
+    width: 100px;
+    height: 66%;
+    background-image: url("../imagenes/arduino_ide.png");
+    background-size: 100px 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#arduino_ide .item_text{
+    width: 60%;
+}
+
+#arduino_project_hub .imag{
+    background-image: url("../imagenes/projecthub.jpg");
+    background-size: 100px 120px;
+    width: 100px;
+    height: 66%;
+    border-radius: 20px;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+#arduino_iot_cloud .imag{
+    background-image: url("../imagenes/arduino_iot_cloud.png");
+    background-size: 100px 100px;
+    width: 100px;
+    height: 66%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#arduino_iot_cloud .item_text{
+    width: 60%;
+}
+
+.item_text{
+    float: left;
+    width: 70%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+}
+
+.items:nth-child(2n) .item_text{
+    float: right;
+    margin: 0px;
+    margin: 10px 10px 0 0;
+}
+
+.item_text p{
+    text-align: justify;
+}
+
+.items{
+    font-family: SansationLight;
+    -webkit-box-shadow: 2px 2px 10px black;
+    -moz-box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black;
+}
+
+#accesos{
+    margin: 0 auto;
+    width: 70%;
+    font-family: SansationLight;
+}
+
+#accesos div{
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    background-color: rgba(94, 172, 232, 0.7);
+    -webkit-box-shadow: 2px 2px 10px black;
+    -moz-box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black;
+}
+
+#accesos div:hover{
+    background-color: rgba(94, 172, 232, 0.9);
+    cursor: pointer;
+}
+
+#accesos p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.imag{
+    margin: 20px;
+}

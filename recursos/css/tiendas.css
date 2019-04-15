@@ -1,0 +1,93 @@
+#mapid{
+    height: 500px;
+    width: 95%;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;        
+}
+
+h1{
+    font-family: SansationLight;
+    height: 87px;
+    width: 95%;
+    margin: 50px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);
+    overflow: auto;
+    font-size: 40px;
+    color: blue;
+    text-shadow: 1.5px 1.5px black;
+}
+
+#intromsg,#formintro{
+    margin-top: 10px;
+    padding: 20px;  
+}
+
+body{
+    background-image: url("../imagenes/big_wallpaper2.jpg");
+}
+
+
+form{
+    font-family: SansationLight;
+    width: 95%;
+    margin: 30px auto;
+    border: 1px solid black;
+    border-radius: 20px;    
+    background-color: lightgreen;
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%);  
+}
+
+table{
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+td{
+    padding: 5px;
+}
+
+form input{
+    transition: all 0.30s ease-in-out;
+    outline: none;
+    border: 2px solid lightblue;
+}
+
+form input:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
+}
+
+.center{
+    text-align: center;
+}
+
+.center td{
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+#otros td{
+    padding-bottom: 50px;
+}
+
+input[type="text"]{
+    height: 30px;
+
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+
+tr:last-child td{
+    text-align: center;
+    padding-top: 40px;
+}
+
+form input[type="submit"]{
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
