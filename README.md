@@ -8,3 +8,5 @@ Solo hay que clonar este repositorio y abrir el fichero index.html
 <h1>*ENG*</h1> <h2>Arduino website project using HTML/CSS/JavaScript</h2><br/>
 
 You just have to clone this repository and open the index.html file
+
+(The website is only in Spanish as it was really intended to be for the original purpose, sorry about that).
