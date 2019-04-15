@@ -9,4 +9,4 @@ Solo hay que clonar este repositorio y abrir el fichero index.html
 
 You just have to clone this repository and open the index.html file
 
-(The website is only in Spanish as it was really intended to be for the original purpose, sorry about that).
+(The website is only in Spanish as it was really intended to be so for the original purpose, sorry about that).
